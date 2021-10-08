@@ -489,11 +489,34 @@ Recipes
 }
 
 @media screen and (min-widht: 576px) {
-  .recipe.list
+  .recipe.list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recipe-img {
+    height: 10rem;
+  }
 }
 @media screen and (min-widht: 992px) {
+  .recipes-container {
+    grid-template-columns: 200px 1fr;
+  }
+  .tags-container {
+    order: 0;
+  }
+  .tags-list {
+    grid-template-columns: 1fr;
+  }
+  .recipe p {
+    font-size: 0.85rem;
+  }
 }
 @media screen and (min-widht: 1200px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recipe h5 {
+    font-size: 1.15rem;
+  }
 }
 /*
 ==================
