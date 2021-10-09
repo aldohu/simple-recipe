@@ -488,7 +488,7 @@ Recipes
   letter-spacing: var(--letterSpacing);
 }
 
-@media screen and (min-widht: 576px) {
+@media screen and (min-width: 576px) {
   .recipe.list {
     grid-template-columns: 1fr 1fr;
   }
@@ -496,9 +496,10 @@ Recipes
     height: 10rem;
   }
 }
-@media screen and (min-widht: 992px) {
+@media screen and (min-width: 992px) {
   .recipes-container {
     grid-template-columns: 200px 1fr;
+    border: 2px soldi blue;
   }
   .tags-container {
     order: 0;
@@ -510,9 +511,13 @@ Recipes
     font-size: 0.85rem;
   }
 }
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .recipes-list {
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: royalblue;
+  }
+  .tags-container {
+    order: 0;
   }
   .recipe h5 {
     font-size: 1.15rem;
